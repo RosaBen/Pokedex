@@ -39,7 +39,7 @@ export default function App() {
 
   
   return (
-    <div>
+    <div className="pokemon">
       
 <PokemonCard pokemon={pokemonList[pokemonIndex]}/>
 <NavBar pokemons={pokemonList} pokemonIndex={setPokemonIndex}/>

@@ -4,8 +4,8 @@ export default function PokemonCard({ pokemon }) {
  
  return (
     <>
-    <figure>
-    {pokemon.imgSrc? (<img src={pokemon.imgSrc} alt={pokemon.name} />): (<p>????</p>)}
+    <figure className={`card ${pokemon.name}`}>
+    {pokemon.imgSrc? (<img src={pokemon.imgSrc} alt={pokemon.name} className="card-img"/>): (<p>????</p>)}
         <figcaption>{pokemon.name}</figcaption>
     </figure>
 
