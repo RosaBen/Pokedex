@@ -19,3 +19,12 @@ PokemonCard.propTypes = {
         imgSrc: PropTypes.string,
     }).isRequired,
 }
+
+// NomFonction.propTypes = {
+// props: PropTypes.shape({
+// key: PropTypes.type.isRequired,}).isRequired,
+// shape for object
+// arrayOf for array
+// oneOfType for union
+// oneOf for enum
+// instanceOf for class
