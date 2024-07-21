@@ -1,3 +1,4 @@
+import PropTypes from 'prop-types';
 export default function PokemonCard({ pokemon }) {
    
  
@@ -10,4 +11,11 @@ export default function PokemonCard({ pokemon }) {
 
     </>
  )
+}
+
+PokemonCard.propTypes = {
+    pokemon: PropTypes.shape({
+        name: PropTypes.string.isRequired,
+        imgSrc: PropTypes.string,
+    }).isRequired,
 }
