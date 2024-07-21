@@ -3,6 +3,11 @@
   margin: 0 auto;
   padding: 2rem;
   text-align: center;
+  --charmander:#e9aa7c;
+  --bulbasaur:#92c9ad;
+  --squirtle:#66a0b2;
+  --pikachu:#f4d77c;
+  --mew: grey;
 }
 
 .logo {
@@ -39,4 +44,62 @@
 
 .read-the-docs {
   color: #888;
+}
+
+.card {
+  width: 200px;
+  padding: 1rem;
+  border-radius: 5px;
+  box-shadow: 0px 0px 5px gray;
+  color: white;
+  font-size: 1.6rem;
+  text-align: center;
+  text-shadow: 0px 0px 5px gray;
+}
+
+.mew {
+  background-color: var(--mew);
+}
+
+.charmander {
+  background-color: var(--charmander);
+}
+
+.bulbasaur {
+  background-color: var(--bulbasaur);
+}
+
+.squirtle {
+  background-color: var(--squirtle);
+}
+
+.pikachu {
+  background-color: var(--pikachu);
+}
+
+.card-img {
+  width: 100%;
+  height: auto;
+  margin-bottom: 0.5rem;
+  background-color: white;
+  border-radius: inherit;
+  box-shadow: inherit;
+}
+
+.pokemon{
+  display: flex;
+  flex-direction: column ;
+  align-items: center;
+  gap: 1rem;
+border: 2px solid black;
+  border-radius: 5px;
+  padding: 1rem;
+  margin: 1rem;
+  background-color: whitesmoke;
+}
+
+.buttons {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
 }
