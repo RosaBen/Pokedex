@@ -1,3 +1,4 @@
+import PropTypes from 'prop-types';
 export default function PokemonCard({ pokemon }) {
    
  
@@ -11,3 +12,19 @@ export default function PokemonCard({ pokemon }) {
     </>
  )
 }
+
+PokemonCard.propTypes = {
+    pokemon: PropTypes.shape({
+        name: PropTypes.string.isRequired,
+        imgSrc: PropTypes.string,
+    }).isRequired,
+}
+
+// NomFonction.propTypes = {
+// props: PropTypes.shape({
+// key: PropTypes.type.isRequired,}).isRequired,
+// shape for object
+// arrayOf for array
+// oneOfType for union
+// oneOf for enum
+// instanceOf for class
