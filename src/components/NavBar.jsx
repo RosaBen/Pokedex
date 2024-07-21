@@ -5,11 +5,14 @@ export default function NavBar({ pokemons, pokemonIndex}) {
        <>
        {pokemons.map((pokemon, index) => (
               <button 
-              key={pokemon.name} 
+               
               type="button"
-              onClick={() => pokemonIndex(index)}
-              >
-                {pokemon.name}</button>
+              onClick={() => {
+                {pokemon.name === "pikachu" ? alert("pika pikachu !!!") : null}
+            pokemonIndex(index)}}
+            key={pokemon.name}
+              >{pokemon.name}
+                </button>
          ))}
        </>
     )
