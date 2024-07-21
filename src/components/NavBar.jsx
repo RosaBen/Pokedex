@@ -1,8 +1,24 @@
-export default function NavBar({previousButton, nextButton}) {
+import PropTypes from 'prop-types';
+
+export default function NavBar({ pokemons, pokemonIndex}) {
     return(
        <>
-        <button type="button" onClick={previousButton}>Précédent</button>
-        <button type="button" onClick={nextButton}>Suivant</button>
+       {pokemons.map((pokemon, index) => (
+              <button 
+              key={pokemon.name} 
+              type="button"
+              onClick={() => pokemonIndex(index)}
+              >
+                {pokemon.name}</button>
+         ))}
        </>
     )
+}
+
+NavBar.propTypes = {
+    pokemonIndex: PropTypes.func.isRequired,
+    pokemons: PropTypes.arrayOf(PropTypes.shape({
+        name: PropTypes.string.isRequired,
+        imgSrc: PropTypes.string,
+    })).isRequired,
 }
